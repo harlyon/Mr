@@ -64,7 +64,24 @@
     ================================================== -->
 	<script src="js/modernizr.js"></script>
 	
-	
+	<style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
+	  
 </head>
     <body class="fixed-header">
 	    	
@@ -128,11 +145,11 @@
 						
 						<nav class="main-nav navbar-collapse collapse" id="primary-nav">
 							<ul class="nav nav-pills">
-								<li class="dropdown"><a href="#.">PARTNER <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Partner <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="egroup.html">eGroup</a></li>
 										<li><a href="pensionkasse.html">Pensionkasse</a></li>
-										<li><a href="swica.html">SWICA</a></li>
+										<li><a href="swica.html">Swica</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">Über uns<i class="fa fa-caret-down"></i></a>
@@ -159,14 +176,14 @@
 								</li>
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<!--<li><a href="kontakt.html">Unsere Koordinaten</a></li>-->
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Sprache <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">ENG</a></li>
-										<li><a href="kontakt1.html">GER</a></li>
+										<li><a href="kontakt.html">English</a></li>
+										<li><a href="kontakt1.html">Deutsch</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -187,7 +204,7 @@
 						<div class="cd-full-width">
 							<div class="container">
 								<h2>Rechtsberatung und <br><span class="color-default">Steuerberatung</span></h2>
-								<p>Finden Sie Ihren nächsten Berater..</p>
+								<p>Finden Sie Ihren nächsten Berater</p>
 							</div>
 						</div>
 					</li>
@@ -195,28 +212,28 @@
 					<li>
 						<div class="cd-full-width">
 							<div class="container">
-								<h2>Arbeitsverhältnis und <span class="color-default">Personalverleihs</span></h2>
+								<h2 class="color-white" >Arbeitsverhältnis und <br> <span class="color-default">Personalverleihs</span></h2>
 								
 							</div>
 						</div>
 					</li>
 
 					<li>
-						<div class="cd-full-width">
+						<div class="cd-full-width" id="sli">
 							<div class="container text-center">
 								<h2 class="color-white">Freundliche Hilfe</h2>
-								<p class="color-white">Mit über 10 Jahren Erfahrung sorgen wir dafür</p>
+								<p class="color-default">Mit über 10 Jahren Erfahrung sorgen wir dafür</p>
 								<a href="about-us.html" class="btn btn-primary" data-text="read more">KONTAKTIEREN SIE UNS HEUTE</a>
 							</div>
 						</div>
 					</li>
 
 					<li>
-						<div class="cd-full-width">
+						<!--<div class="cd-full-width">
 							<div class="container text-right">
 								<h2>Personalverleihs <span class="color-default">Freundliche Hilfe<br></span>Mit über</h2>
 							</div>
-						</div>
+						</div>-->
 					</li>
 
 				</ul>
@@ -226,10 +243,10 @@
 						<span class="cd-marker item-1"></span>
 						
 						<ul>
-							<li class="selected"><a href="#0"><div class="slide-number">1</div> Finden Sie Ihren nächsten</a></li>
-							<li><a href="#0"><div class="slide-number">2</div> Arbeits verhältnis Mit </a></li>
-							<li><a href="#0"><div class="slide-number">3</div> Mit über 10 Jahren  </a></li>
-							<li><a href="#0"><div class="slide-number">4</div> Freundliche Hilfe Doing the </a></li>
+							<li class="selected"><a href="#0"><div class="slide-number">1</div> Rechtsberatung und Steuerberatung</a></li>
+							<li><a href="#0"><div class="slide-number">2</div> Arbeitsverhältnis und Personalverleihs</a></li>
+							<li><a href="#0"><div class="slide-number">3</div> Freundliche Hilfe </a></li>
+							<!--<li><a href="#0"><div class="slide-number">4</div> Freundliche Hilfe<span>Doing the right thing</span></a></li>-->
 						</ul>
 					</nav> 
 				</div>
@@ -669,13 +686,13 @@
             <div class="container">
                 <div class="row">
                     <ul>
-                        <ul style="display: inherit;" class="header-contact-widget clearfix">
+                        <ul style="display: inherit; text-align: center; " class="header-contact-widget clearfix">
                             <li style="list-style: none; display: inline-flex;">
                                 <i style="font-size: 30px; position: relative; top: top: inherit;" class="icon-telephone114"></i>
                                 <p style="0 0 0 0px;
 
 font-weight: 600;
-                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
+                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px; padding: 0 10px 0 0px;">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
                             </li>
 
                             <li style="list-style: none;display: inline-flex;">

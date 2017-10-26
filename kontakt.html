@@ -64,7 +64,24 @@
     ================================================== -->
 	<script src="js/modernizr.js"></script>
 	
-	
+	<style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
+	  
 </head>
     <body class="fixed-header">
 	    	
@@ -160,7 +177,7 @@
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>

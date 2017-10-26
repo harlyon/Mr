@@ -63,7 +63,24 @@
     
     ================================================== -->
 	<script src="js/modernizr.js"></script>
-	
+	    
+	  <style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
 	
 </head>
     <body class="fixed-header">
@@ -128,11 +145,11 @@
 						
 						<nav class="main-nav navbar-collapse collapse" id="primary-nav">
 							<ul class="nav nav-pills">
-								<li class="dropdown"><a href="#.">PARTNER <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Partner <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="egroup.html">eGroup</a></li>
 										<li><a href="pensionkasse.html">Pensionkasse</a></li>
-										<li><a href="swica.html">SWICA</a></li>
+										<li><a href="swica.html">Swica</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">Über uns<i class="fa fa-caret-down"></i></a>
@@ -159,14 +176,14 @@
 								</li>
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<!--<li><a href="kontakt.html">Unsere Koordinaten</a></li>-->
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Sprache <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">ENG</a></li>
-										<li><a href="kontakt1.html">GER</a></li>
+										<li><a href="kontakt.html">English</a></li>
+										<li><a href="kontakt1.html">Deutsch</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -206,8 +223,8 @@
 					<div class=" col-md-12 animate fadeInUp">
 					 <div class="map-with-address-widget animate fadeInRight">
 						 <!--<h3>Standort</h3><br>-->
-								<p>Unsere modernen und hellen Büros befinden sich inmitten der aufstrebenden Wirtschaftsregion Zug West. Sie können uns wie folgt erreichen:</p>
-						           <br>
+								<p>Unsere modernen und hellen Büros befinden sich inmitten der aufstrebenden Wirtschaftsregion Zug West. Sie können uns wie folgt erreichen:</p><br>
+						           
 									<div class="map" id="map">
                                 
                                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDCShFeUtM0erOyXz49P3gm4fmSPYWGDfc&q=Hinterbergstrasse 11,CH-6330 Cham" allowfullscreen height="100%" width="100%">
@@ -222,22 +239,24 @@
 					
 					<div class="row">
 					<div class=" col-md-12 animate fadeInUp">
-					        <section id="clear">
+					        
 							<div id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="height-50"></div>
-								<div class="toggle two" >
+								<div class="toggle two" id="tabbs">
 									<div class="toggle-heading" role="tab">
 										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 										  <i class="fa fa-minus"></i> Mit der Bahn </a>
 									</div>
 									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>S5 von Zürich oder Zug, Haltestelle Steinhausen Rigiblick</p>
+											<ul class="dien">
+												<li><p>S5 von Zürich oder Zug, Haltestelle Steinhausen Rigiblick</p></li>
+											</ul>
 										</div>
 										</div>
 									</div>
 								</div>
-						</section>
+						
 						</div>
 								</div>
 								<div class="toggle two">
@@ -248,15 +267,18 @@
 									</div>
 									<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>A4 von Zürich oder Luzern bis Verzweigung Blegi, A4a,</p>
-                                            <p>Ausfahrt 2 Cham/Zug/Steinhausen, </p>
-                                            <p>Richtung Zug/Chamerstrasse,</p>
-                                            <p>nach ca. 600m links abbiegen auf Alte Steinhauserstrasse, </p>
-                                            <p>dann nach rechts Hinterbergstrasse.</p>
-                                            <p>Markierte Besucherparkplätze finden sich rund um das Gebäude.</p>
+											<ul class="dien">
+												<li><p>A4 von Zürich oder Luzern bis Verzweigung Blegi, A4a,</p></li>
+											<li><p>Ausfahrt 2 Cham/Zug/Steinhausen, </p></li>
+										<li><p>Richtung Zug/Chamerstrasse,</p></li>
+                                           <li> <p>nach ca. 600m links abbiegen auf Alte Steinhauserstrasse, </p></li>
+											<li><p>dann nach rechts Hinterbergstrasse.</p></li>
+										<li><p>Markierte Besucherparkplätze finden sich rund um das Gebäude.</p></li>
+											</ul>
 										</div>
 									</div>
 								</div>
+								
 					</div>
 					
 				
@@ -290,13 +312,13 @@
             <div class="container">
                 <div class="row">
                     <ul>
-                        <ul style="display: inherit;" class="header-contact-widget clearfix">
+                        <ul style="display: inherit; text-align: center; " class="header-contact-widget clearfix">
                             <li style="list-style: none; display: inline-flex;">
                                 <i style="font-size: 30px; position: relative; top: top: inherit;" class="icon-telephone114"></i>
                                 <p style="0 0 0 0px;
 
 font-weight: 600;
-                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
+                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px; padding: 0 10px 0 0px;">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
                             </li>
 
                             <li style="list-style: none;display: inline-flex;">

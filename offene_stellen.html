@@ -64,7 +64,24 @@
     ================================================== -->
 	<script src="js/modernizr.js"></script>
 	
-	
+	   <style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
+	  
 </head>
     <body class="fixed-header">
 	    	
@@ -128,11 +145,11 @@
 						
 						<nav class="main-nav navbar-collapse collapse" id="primary-nav">
 							<ul class="nav nav-pills">
-								<li class="dropdown"><a href="#.">PARTNER <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Partner <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="egroup.html">eGroup</a></li>
 										<li><a href="pensionkasse.html">Pensionkasse</a></li>
-										<li><a href="swica.html">SWICA</a></li>
+										<li><a href="swica.html">Swica</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">Über uns<i class="fa fa-caret-down"></i></a>
@@ -159,14 +176,14 @@
 								</li>
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<!--<li><a href="kontakt.html">Unsere Koordinaten</a></li>-->
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Sprache <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">ENG</a></li>
-										<li><a href="kontakt1.html">GER</a></li>
+										<li><a href="kontakt.html">English</a></li>
+										<li><a href="kontakt1.html">Deutsch</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -211,31 +228,29 @@
 						<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
                             <div align="left">
                             <select name="mydropdown">
-                            <option value="Land auswählen">Land auswählen</option>
-                            <option value="#">Item 2</option>
-                            <option value="#">Item 3</option>
+                            <option value="#">Land auswählen</option>
                             </select>
                             </div>
                         </form>
                          <br>
-						<br>
 						
-						 <form>
+						
+						<!-- <form>
                            <br>
                             <input type="text" name="firstname" placeholder="Offene Stellen / wir suchen">
-                        </form> 
+                        </form> -->
 
 					</div>
 					</div>
 					<br>
 					<div class="row">
-						<div class="col-md-6 animate fadeInUp" data-delay="100">
-							<img src="images/eGroup_logo1.png">
+						<div class="col-md-6 animate fadeInUp" data-delay="100" style="float:left;">
+							<img src="images/eGroup_logo1.png" class="egroup">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 animate fadeInUp" data-delay="100">
-							<img src="images/logo%201.png">
+						<div class="col-md-6 animate fadeInUp" data-delay="100" style="float:right; margin-top: -60px;">
+							<img src="images/logo%201.png" class="ecare">
 						</div>
 					</div>
 					
@@ -274,13 +289,13 @@
             <div class="container">
                 <div class="row">
                     <ul>
-                        <ul style="display: inherit;" class="header-contact-widget clearfix">
+                         <ul style="display: inherit; text-align: center; " class="header-contact-widget clearfix">
                             <li style="list-style: none; display: inline-flex;">
                                 <i style="font-size: 30px; position: relative; top: top: inherit;" class="icon-telephone114"></i>
                                 <p style="0 0 0 0px;
 
 font-weight: 600;
-                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
+                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px; padding: 0 10px 0 0px;">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
                             </li>
 
                             <li style="list-style: none;display: inline-flex;">

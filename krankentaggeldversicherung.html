@@ -64,7 +64,24 @@
     ================================================== -->
 	<script src="js/modernizr.js"></script>
 	
-	
+	<style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
+	  
 </head>
     <body class="fixed-header">
 	    	
@@ -128,11 +145,11 @@
 						
 						<nav class="main-nav navbar-collapse collapse" id="primary-nav">
 							<ul class="nav nav-pills">
-								<li class="dropdown"><a href="#.">PARTNER <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Partner <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="egroup.html">eGroup</a></li>
 										<li><a href="pensionkasse.html">Pensionkasse</a></li>
-										<li><a href="swica.html">SWICA</a></li>
+										<li><a href="swica.html">Swica</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">Über uns<i class="fa fa-caret-down"></i></a>
@@ -159,14 +176,14 @@
 								</li>
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<!--<li><a href="kontakt.html">Unsere Koordinaten</a></li>-->
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Sprache <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">ENG</a></li>
-										<li><a href="kontakt1.html">GER</a></li>
+										<li><a href="kontakt.html">English</a></li>
+										<li><a href="kontakt1.html">Deutsch</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -211,10 +228,11 @@
 						</div>
 						</div>
 					</div>
-					<br>
+					
+					
 							<div id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="height-50"></div>
-								<div class="toggle two" >
+								<div class="toggle two" id="tabbs">
 									<div class="toggle-heading" role="tab">
 										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 										  <i class="fa fa-minus"></i> Vermittlung von Anschlussverträgen
@@ -222,10 +240,11 @@
 									</div>
 									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>GAV- konforme Krankentaggeldversicherung (Branchenlösung)</p>
-											<p>Profitieren Sie von tiefen Versicherungsprämien dank Branchenspezialisierung</p>
-											<p>Jährliche Prämienanpassung aufgrund effektivem Schadenverlauf möglich</p>
-
+											<ul class="dien">
+											<li><p>GAV- konforme Krankentaggeldversicherung (Branchenlösung)</p></li>
+											<li><p>Profitieren Sie von tiefen Versicherungsprämien dank Branchenspezialisierung</p></li>
+											<li><p>Jährliche Prämienanpassung aufgrund effektivem Schadenverlauf möglich</p></li>
+										</ul>
                                            
 										</div>
 									</div>
@@ -238,8 +257,10 @@
 									</div>
 									<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>Rasche und effiziente Schadenabwicklung durch Spezialisten der eCare und SWICA mit Know-how und Erfahrung im Personalverleih</p>
-											<p>Integriertes Case Management und professionelle Fallbegleitung durch SWICA</p>
+											<ul class="dien">
+											<li><p>Rasche und effiziente Schadenabwicklung durch Spezialisten der eCare und SWICA mit Know-how und Erfahrung im Personalverleih</p></li>
+											<li><p>Integriertes Case Management und professionelle Fallbegleitung durch SWICA</p></li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -251,23 +272,27 @@
 									</div>
 									<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>Firmengründungen im Personalverleih</p>
-											<p>Beratung und Vertretung im Rahmen von Betriebsbewilligungen nach AVG</p>
-											<p>Redaktion von AVG-Dokumenten</p>
+										<ul class="dien">
+										<li><p>Firmengründungen im Personalverleih</p></li>
+											<li><p>Beratung und Vertretung im Rahmen von Betriebsbewilligungen nach AVG</p></li>
+											<li><p>Redaktion von AVG-Dokumenten</p></li>
+											</ul>
 										</div>
 									</div>
 								</div>
                                  <div class="toggle two" >
 									<div class="toggle-heading" role="tab">
-										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
 										  <i class="fa fa-minus"></i> Administration
 										</a>
 									</div>
-									<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">
+									<div id="collapseFive" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>Einfache Fallmeldung über Onlineportal</p>
-											<p>Rasche Abrechnung und Zahlung der Taggelder mittels der führenden Branchensoftware E@syTemp</p>
-											<p>Informationen über abgerechnete Taggelder jederzeit in E@syTemp verfügbar</p>
+											<ul class="dien">
+											<li><p>Einfache Fallmeldung über Onlineportal</p></li>
+											<li><p>Rasche Abrechnung und Zahlung der Taggelder mittels der führenden Branchensoftware E@syTemp</p></li>
+											<li><p>Informationen über abgerechnete Taggelder jederzeit in E@syTemp verfügbar</p></li>
+								        </ul>
 										</div>
 									</div>
 								</div>
@@ -280,9 +305,11 @@
 									</div>
 									<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel">
 										<div class="toggle-body">
-											<p>Rechtliche Unterstützung und Beratung durch integrierten Rechtsdienst der Realisator AG</p>
-											<p>Spezifisches Know-how und Erfahrung im Personalverleih</p>
-											<p>Ausgestaltung von Verträgen, Statuten und Reglementen</p>
+											<ul class="dien">
+											<li><p>Rechtliche Unterstützung und Beratung durch integrierten Rechtsdienst der Realisator AG</p></li>
+											<li><p>Spezifisches Know-how und Erfahrung im Personalverleih</p></li>
+											<li><p>Ausgestaltung von Verträgen, Statuten und Reglementen</p></li>
+					                     </ul>
 										</div>
 									</div>
 								</div>
@@ -322,13 +349,13 @@
             <div class="container">
                 <div class="row">
                     <ul>
-                        <ul style="display: inherit;" class="header-contact-widget clearfix">
+                         <ul style="display: inherit; text-align: center; " class="header-contact-widget clearfix">
                             <li style="list-style: none; display: inline-flex;">
                                 <i style="font-size: 30px; position: relative; top: top: inherit;" class="icon-telephone114"></i>
                                 <p style="0 0 0 0px;
 
 font-weight: 600;
-                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
+                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px; padding: 0 10px 0 0px;">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
                             </li>
 
                             <li style="list-style: none;display: inline-flex;">

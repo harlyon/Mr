@@ -64,7 +64,24 @@
     ================================================== -->
 	<script src="js/modernizr.js"></script>
 	
-	
+	<style type="text/css">
+        @media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}
+          
+@media only screen and (max-width: 768px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block; }
+}    
+      </style>   
+
+	  
 </head>
     <body class="fixed-header">
 	    	
@@ -128,11 +145,11 @@
 						
 						<nav class="main-nav navbar-collapse collapse" id="primary-nav">
 							<ul class="nav nav-pills">
-								<li class="dropdown"><a href="#.">PARTNER <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Partner <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
 										<li><a href="egroup.html">eGroup</a></li>
 										<li><a href="pensionkasse.html">Pensionkasse</a></li>
-										<li><a href="swica.html">SWICA</a></li>
+										<li><a href="swica.html">Swica</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#.">Über uns<i class="fa fa-caret-down"></i></a>
@@ -159,14 +176,14 @@
 								</li>
 								<li class="dropdown"><a href="#.">Kontakt <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">Unsere Koordinaten</a></li>
-										<li><a href="kontakt1.html">Unsere Koordinaten1</a></li>
+										<!--<li><a href="kontakt.html">Unsere Koordinaten</a></li>-->
+										<li><a href="kontakt1.html">Unsere Koordinaten</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#.">SPRACHE <i class="fa fa-caret-down"></i></a>
+								<li class="dropdown"><a href="#.">Sprache <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="kontakt.html">ENG</a></li>
-										<li><a href="kontakt1.html">GER</a></li>
+										<li><a href="kontakt.html">English</a></li>
+										<li><a href="kontakt1.html">Deutsch</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -203,20 +220,19 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="map-with-address-widget animate fadeInLeft">
+							<div class="map-with-address-widget animate fadeInLeft" id="kontact"><br>
 								<h3>Legal Services</h3>
 								<p>Head of Legal Services: lic. iur. <br>Roger Kühne.turpis. </p>
-								
-								
 								<div class="contact-info-widget">
 									<p><i class="icon-telephone114"> +41 44 744 96 70</i><br>
 									<i class="fa fa-envelope-o"></i>  <a href="mailto:rechts@realisator.ch">rechts@realisator.ch</a><br>
 									</p>
+									<br>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="map-with-address-widget animate fadeInRight">
+							<div class="map-with-address-widget animate fadeInRight" id="kontact"><br>
 								<h3>Tax Services</h3>
 								<p>Head of Tax Services: <br>Tamara Tormen, dipl Tax expert​  </p>
 								
@@ -224,6 +240,7 @@
 									<p><i class="icon-telephone114"> +41 44 744 96 63</i><br>
 									<i class="fa fa-envelope-o"></i> <a href="mailto:ttormen@ecare.ch">ttormen@ecare.ch</a><br>
 									</p>
+									<br>
 								</div>
 							</div>
 						</div>
@@ -235,25 +252,27 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="map-with-address-widget animate fadeInLeft">
+							<div class="map-with-address-widget animate fadeInLeft" id="kontact"><br>
 								<h3>SWICA Agency Services</h3>
-								<p>Head of Legal Services: lic. iur. Roger Kühne.turpis. </p>
+								<p>Head of Legal Services: lic. iur. <br>Roger Kühne.turpis. </p>
 								 <div class="contact-info-widget">
 									<p><i class="icon-telephone114"> +41 44 744 96 60</i><br>
 										<i class="fa fa-envelope-o"></i> <a href="mailto:cm@ecare.ch"> info@ecare.ch</a><br>
 									</p>
+									 <br>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="map-with-address-widget animate fadeInRight">
+							<div class="map-with-address-widget animate fadeInRight" id="kontact"><br>
 								<h3>Case Management</h3>
-								<p>Head of Tax Services: Tamara Tormen, dipl Tax expert​  </p>
+								<p>Head of Tax Services:<br> Tamara Tormen, dipl Tax expert​  </p>
 								
 								<div class="contact-info-widget">
 									<p><i class="icon-telephone114"> +41 44 744 96 60</i><br>
 										<i class="fa fa-envelope-o"></i><a href="mailto:cm@ecare.ch"> cm@ecare.ch</a><br>
 									</p>
+									<br>
 								</div>
 							</div>
 						</div>
@@ -288,13 +307,13 @@
             <div class="container">
                 <div class="row">
                     <ul>
-                        <ul style="display: inherit;" class="header-contact-widget clearfix">
+                        <ul style="display: inherit; text-align: center; " class="header-contact-widget clearfix">
                             <li style="list-style: none; display: inline-flex;">
                                 <i style="font-size: 30px; position: relative; top: top: inherit;" class="icon-telephone114"></i>
                                 <p style="0 0 0 0px;
 
 font-weight: 600;
-                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
+                                          line-height: normal; font-size: 14px;"><span style="font-size: 12px; padding: 0 10px 0 0px;">+41 44 744 96 60 </span> <a style="display: block; font-size: 10px; font-weight: 400; display: block;" href="mailto:info@ecare.ch">info@ecare.ch</a></p>
                             </li>
 
                             <li style="list-style: none;display: inline-flex;">
